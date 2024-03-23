@@ -2,6 +2,8 @@ import Functions
 import time
 
 now = time.strftime("Date: %d-%b-%y      Time: %H:%M:S \n")
+
+print("Hi")
 print(now)
 
 while True:
