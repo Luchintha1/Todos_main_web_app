@@ -9,7 +9,8 @@ while True:
     user_action = user_action.strip()
     user_action = user_action.capitalize()
 
-    # Note  that in keyword will check string inside of a string
+    # Note that in keyword will check string inside of a string
+
     if user_action.startswith("Add"):
 
         # string slicing takes string after 4 characters
@@ -28,8 +29,8 @@ while True:
 
         todo_List = Functions.get_todos()
 
-       # for item in todo_List:
-       #     item = item.strip('\n')
+        # for item in todo_List:
+        #     item = item.strip('\n')
         #    new_todo_list.append(item)
 
         # List Comprehension
@@ -53,10 +54,10 @@ while True:
 
             new_todo = input("Enter new ToDO: ")
 
-            if(len(todo_List) == 0):
-                todo_List[number] = (new_todo)
+            if len(todo_List) == 0:
+                todo_List[number] = new_todo
             else:
-                todo_List[number] = (new_todo) + "\n"
+                todo_List[number] = new_todo + "\n"
 
             Functions.set_todos(todo_List)
         except ValueError:
@@ -82,7 +83,6 @@ while True:
             Functions.set_todos(todo_List)
 
             print(f"{item_to_remove} is removed from the List")
-
 
         except ValueError:
             print("Invalid Command Please Enter The Number.")
