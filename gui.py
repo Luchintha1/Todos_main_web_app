@@ -36,6 +36,7 @@ while True:
         # value is the thing we add
         # Windows.read() will return a tuple.
         event, values = window.read() #(timeout=500)
+
         #window["clock"].update(value=time.strftime("%d - %b - %y   %H:%M:%S"))
 
         match event:
