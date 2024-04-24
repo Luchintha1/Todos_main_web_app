@@ -81,5 +81,4 @@ while True:
     except:
         break
 
-a
 window.close()
