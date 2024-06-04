@@ -1,6 +1,7 @@
 import streamlit as st
 import Functions
 
+Functions.set_todos(todos)
 todos = Functions.get_todos()
 
 def add_todo():
