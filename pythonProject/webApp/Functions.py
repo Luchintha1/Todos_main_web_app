@@ -6,7 +6,6 @@ def get_todos(filePath="todos.txt"):
     with open(filePath, 'r') as read_file:
         todo_list_local = read_file.readlines()
     return todo_list_local
-a
 
 def set_todos(todos_arg, filePath="todos.txt"):
 

@@ -18,7 +18,7 @@ st.write('This app increase your productivity')
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
     if checkbox:
-        todos.pop(index)a
+        todos.pop(index)
         Functions.set_todos(todos)
         del st.session_state[todo]
         st.experimental_rerun()
