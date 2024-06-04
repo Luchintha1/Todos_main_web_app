@@ -2,11 +2,13 @@
 def get_todos(filePath="todos.txt"):
 
     """ Read the text file and return a list """
+    try:
+        with open(filePath, 'r') as read_file:
+            todo_list_local = read_file.readlines()
+    except:
+        todo_list_local = []
 
-    with open(filePath, 'r') as read_file:
-        todo_list_local = read_file.readlines()
     return todo_list_local
-
 
 def set_todos(todos_arg, filePath="todos.txt"):
 

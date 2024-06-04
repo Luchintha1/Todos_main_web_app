@@ -11,9 +11,8 @@ def add_todo():
     Functions.set_todos(todos)
 
 
-st.title("To-Do Web App")
-st.subheader('ToDos')
-st.write('This app increase your productivity')
+st.title("Todo Web App")
+st.write('Increase Productivity and Get Work Done.')
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
@@ -23,5 +22,5 @@ for index, todo in enumerate(todos):
         del st.session_state[todo]
         st.experimental_rerun()
 
-st.text_input(label="", placeholder='Add a new todo...',
+st.text_input(label="Todo", label_visibility='hidden', placeholder='Add a new todo...',
               on_change=add_todo, key="new_todo")
