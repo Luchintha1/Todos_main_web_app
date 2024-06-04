@@ -7,7 +7,7 @@ def get_todos(filePath="todos.txt"):
             todo_list_local = read_file.readlines()
     except:
         todo_list_local = []
-
+a
     return todo_list_local
 
 def set_todos(todos_arg, filePath="todos.txt"):
