@@ -11,9 +11,8 @@ def add_todo():
     Functions.set_todos(todos)
 
 
-st.title("To-Do Web App")
-st.subheader('ToDos')
-st.write('This app increase your productivity')
+st.title("Todo Web App")
+st.write('Increase Productivity and Get Work Done.')
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
