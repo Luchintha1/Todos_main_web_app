@@ -8,7 +8,7 @@ def get_todos(filePath="todos.txt"):
     except:
         todo_list_local = []
 
-    return todo_list_local
+    return todo_list_locala
 
 def set_todos(todos_arg, filePath="todos.txt"):
 
